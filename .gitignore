@@ -1,8 +1,11 @@
 dist/
 /host
+*~
 *.o
 *.so
 *.swp
 *.po~
+*.orig
+*.rej
 /docs
 modules/luci-base/src/po2lmo
