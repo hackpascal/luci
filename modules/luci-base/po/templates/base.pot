@@ -433,6 +433,9 @@ msgstr ""
 msgid "Checksum"
 msgstr ""
 
+msgid "Chip Model"
+msgstr ""
+
 msgid ""
 "Choose the firewall zone you want to assign to this interface. Select "
 "<em>unspecified</em> to remove the interface from the associated zone or "
