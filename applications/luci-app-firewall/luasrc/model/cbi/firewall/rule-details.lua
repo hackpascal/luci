@@ -76,7 +76,7 @@ elseif rule_type == "redirect" then
 		translate("You may specify multiple by selecting \"-- custom --\" and \
 		           then entering protocols separated by space."))
 
-	o:value("all", "All protocols")
+	o:value("all", translate("All protocols"))
 	o:value("tcp udp", "TCP+UDP")
 	o:value("tcp", "TCP")
 	o:value("udp", "UDP")

@@ -187,7 +187,7 @@ p.default = net:proto()
 if not net:is_installed() then
 	p_install = s:taboption("general", Button, "_install")
 	p_install.title      = translate("Protocol support is not installed")
-	p_install.inputtitle = translate("Install package %q" % net:opkg_package())
+	p_install.inputtitle = translate("Install package %q") % net:opkg_package()
 	p_install.inputstyle = "apply"
 	p_install:depends("proto", net:proto())
 

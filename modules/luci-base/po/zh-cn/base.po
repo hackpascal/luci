@@ -13,7 +13,7 @@ msgstr ""
 "X-Generator: Poedit 1.7.5\n"
 
 msgid "(%d minute window, %d second interval)"
-msgstr "(%d分钟信息，%d秒刷新)"
+msgstr "(%d 分钟信息，%d 秒刷新)"
 
 msgid "(%s available)"
 msgstr "(%s 可用)"
@@ -40,16 +40,16 @@ msgid "-- match by label --"
 msgstr "-- 根据标签匹配 --"
 
 msgid "1 Minute Load:"
-msgstr "1分钟负载:"
+msgstr "1 分钟负载:"
 
 msgid "15 Minute Load:"
-msgstr "15分钟负载:"
+msgstr "15 分钟负载:"
 
 msgid "464XLAT (CLAT)"
 msgstr ""
 
 msgid "5 Minute Load:"
-msgstr "5分钟负载:"
+msgstr "5 分钟负载:"
 
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 msgstr "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
@@ -63,7 +63,7 @@ msgstr "<abbr title=\"Domain Name System\">DNS</abbr> 服务器端口"
 msgid ""
 "<abbr title=\"Domain Name System\">DNS</abbr> servers will be queried in the "
 "order of the resolvfile"
-msgstr "将会按照指定的顺序查询<abbr title=\"Domain Name System\">DNS</abbr>"
+msgstr "将会按照指定的顺序查询 <abbr title=\"Domain Name System\">DNS</abbr>"
 
 msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
@@ -81,7 +81,7 @@ msgid ""
 "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Address or Network "
 "(CIDR)"
 msgstr ""
-"<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-地址或超网() (<abbr "
+"<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-地址或超网 (<abbr "
 "title=\"无类别域间路由\">CIDR</abbr>)"
 
 msgid "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Gateway"
@@ -89,7 +89,7 @@ msgstr "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-网关"
 
 msgid "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Suffix (hex)"
 msgstr ""
-"<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-后缀（十六进制）"
+"<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-后缀 （十六进制）"
 
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Configuration"
 msgstr "<abbr title=\"Light Emitting Diode\">LED</abbr>配置"
@@ -104,18 +104,18 @@ msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Dynamic Host Configuration "
 "Protocol\">DHCP</abbr> leases"
 msgstr ""
-"最大<abbr title=\"Dynamic Host Configuration Protocol\">DHCP</abbr>分配数量"
+"最大 <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</abbr> 租约数量"
 
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Extension Mechanisms for "
 "Domain Name System\">EDNS0</abbr> packet size"
-msgstr "最大<abbr title=\"DNS扩展名\">EDNS0</abbr>数据包大小"
+msgstr "最大 <abbr title=\"DNS 扩展机制\">EDNS0</abbr> 数据包大小"
 
 msgid "<abbr title=\"maximal\">Max.</abbr> concurrent queries"
-msgstr "<abbr title=\"maximal\">最大</abbr>并发查询数"
+msgstr "最大并发查询数"
 
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
-msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
+msgstr "<abbr title='密钥对: %s / 组: %s'>%s - %s</abbr>"
 
 msgid "ADSL"
 msgstr "ADSL"
@@ -130,19 +130,19 @@ msgid "APN"
 msgstr "APN"
 
 msgid "AR Support"
-msgstr "AR支持"
+msgstr "AR 支持"
 
 msgid "ARP retry threshold"
-msgstr "ARP重试阈值"
+msgstr "ARP 重试阈值"
 
 msgid "ATM Bridges"
-msgstr "ATM桥接"
+msgstr "ATM 桥接"
 
 msgid "ATM Virtual Channel Identifier (VCI)"
-msgstr "ATM虚拟通道标识(VCI)"
+msgstr "ATM 虚拟通道标识 (VCI)"
 
 msgid "ATM Virtual Path Identifier (VPI)"
-msgstr "ATM虚拟路径标识(VPI)"
+msgstr "ATM 虚拟路径标识 (VPI)"
 
 msgid ""
 "ATM bridges expose encapsulated ethernet in AAL5 connections as virtual "
@@ -204,7 +204,7 @@ msgid "Additional Hosts files"
 msgstr "额外的HOSTS文件"
 
 msgid "Additional servers file"
-msgstr ""
+msgstr "额外的servers文件"
 
 msgid "Address"
 msgstr "地址"
@@ -220,6 +220,9 @@ msgstr "高级设置"
 
 msgid "Alert"
 msgstr "警戒"
+
+msgid "All protocols"
+msgstr "所有协议"
 
 msgid "Allow <abbr title=\"Secure Shell\">SSH</abbr> password authentication"
 msgstr "允许<abbr title=\"Secure Shell\">SSH</abbr>密码验证"
@@ -295,7 +298,7 @@ msgstr "分配接口..."
 
 msgid ""
 "Assign prefix parts using this hexadecimal subprefix ID for this interface."
-msgstr ""
+msgstr "使用此十六进制子前缀ID给此接口分配前缀"
 
 msgid "Associated Stations"
 msgstr "已连接站点"
@@ -413,7 +416,7 @@ msgstr "已缓冲"
 msgid ""
 "Build/distribution specific feed definitions. This file will NOT be "
 "preserved in any sysupgrade."
-msgstr ""
+msgstr "此固件构建/发布时指定的源。此文件不会在任何系统更新中保留。"
 
 msgid "Buttons"
 msgstr "按键"
@@ -462,7 +465,7 @@ msgid ""
 "<em>unspecified</em> to remove the interface from the associated zone or "
 "fill out the <em>create</em> field to define a new zone and attach the "
 "interface to it."
-msgstr "此接口的防火墙区域。填写<em>创建</em>栏可新建防火墙区域。"
+msgstr "此接口的防火墙区域。选择<em>未指定</em>以删除关联到此区域的接口，填写<em>创建</em>栏可新建防火墙区域。"
 
 msgid ""
 "Choose the network(s) you want to attach to this wireless interface or fill "
@@ -567,10 +570,10 @@ msgstr "自定义分配的IPv6前缀"
 msgid ""
 "Custom feed definitions, e.g. private feeds. This file can be preserved in a "
 "sysupgrade."
-msgstr ""
+msgstr "自定义源，例如私有源。此文件将在系统更新中保留。"
 
 msgid "Custom feeds"
-msgstr ""
+msgstr "自定义源"
 
 msgid ""
 "Customizes the behaviour of the device <abbr title=\"Light Emitting Diode"
@@ -614,7 +617,7 @@ msgid "DNS-Label / FQDN"
 msgstr ""
 
 msgid "DS-Lite AFTR address"
-msgstr ""
+msgstr "DS-Lite AFTR 地址"
 
 msgid "DUID"
 msgstr "DUID（DHCP唯一标识符）"
@@ -670,10 +673,10 @@ msgid "Device Configuration"
 msgstr "设备配置"
 
 msgid "Device is rebooting..."
-msgstr ""
+msgstr "设备正在重启 ..."
 
 msgid "Device unreachable"
-msgstr ""
+msgstr "设备不可达"
 
 msgid "Diagnostics"
 msgstr "网络诊断"
@@ -715,7 +718,7 @@ msgid "Distance to farthest network member in meters."
 msgstr "最远客户端的距离(米)。"
 
 msgid "Distribution feeds"
-msgstr ""
+msgstr "发布源"
 
 msgid "Diversity"
 msgstr "分集"
@@ -792,7 +795,7 @@ msgstr "修改"
 msgid ""
 "Edit the raw configuration data above to fix any error and hit \"Save\" to "
 "reload the page."
-msgstr ""
+msgstr "修改上面的原始数据以修复错误，单击 \"保存\" 以重新载入此页面。"
 
 msgid "Edit this interface"
 msgstr "修改此接口"
@@ -875,13 +878,12 @@ msgstr "扩展HOSTS文件中的主机后缀"
 msgid "Expires"
 msgstr "到期时间"
 
-#, fuzzy
 msgid ""
 "Expiry time of leased addresses, minimum is 2 minutes (<code>2m</code>)."
 msgstr "地址租期，最小2分钟(<code>2m</code>)。"
 
 msgid "External"
-msgstr ""
+msgstr "外部的"
 
 msgid "External system log server"
 msgstr "远程log服务器"
@@ -968,7 +970,7 @@ msgid "Force TKIP and CCMP (AES)"
 msgstr "TKIP和CCMP(AES)混合加密"
 
 msgid "Form token mismatch"
-msgstr ""
+msgstr "表单 token 不一致"
 
 msgid "Forward DHCP traffic"
 msgstr "转发DHCP数据包"
@@ -1010,7 +1012,7 @@ msgid "General Setup"
 msgstr "基本设置"
 
 msgid "General options for opkg"
-msgstr ""
+msgstr "opkg 常规选项"
 
 msgid "Generate archive"
 msgstr "生成备份"
@@ -1119,7 +1121,7 @@ msgid "IPv4 only"
 msgstr "仅IPv4"
 
 msgid "IPv4 prefix"
-msgstr ""
+msgstr "IPv4 前缀"
 
 msgid "IPv4 prefix length"
 msgstr "IPv4地址前缀长度"
@@ -1152,7 +1154,7 @@ msgid "IPv6 address delegated to the local tunnel endpoint (optional)"
 msgstr "绑定到本地隧道终点的IPv6地址(可选)"
 
 msgid "IPv6 assignment hint"
-msgstr ""
+msgstr "IPv6 分配提示"
 
 msgid "IPv6 assignment length"
 msgstr "IPv6分配长度"
@@ -1185,7 +1187,7 @@ msgid "IPv6-over-IPv4 (6to4)"
 msgstr "IPv6-over-IPv4 (6to4)"
 
 msgid "Identity"
-msgstr "鉴权"
+msgstr "身份"
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1228,7 +1230,7 @@ msgstr "入口"
 msgid ""
 "In order to prevent unauthorized access to the system, your request has been "
 "blocked. Click \"Continue »\" below to return to the previous page."
-msgstr ""
+msgstr "由于系统阻止未授权的访问，您的请求被阻止。单击 \"继续 »\" 以返回之前的页面。"
 
 msgid "Inactivity timeout"
 msgstr "活动超时"
@@ -1252,7 +1254,7 @@ msgid "Install iputils-traceroute6 for IPv6 traceroute"
 msgstr "安装iputils-traceroute6以进行IPv6 traceroute"
 
 msgid "Install package %q"
-msgstr "安装软件包%q"
+msgstr "安装软件包 %q"
 
 msgid "Install protocol extensions..."
 msgstr "安装扩展协议..."
@@ -1288,7 +1290,7 @@ msgid "Interfaces"
 msgstr "接口"
 
 msgid "Internal"
-msgstr ""
+msgstr "内部的"
 
 msgid "Internal Server Error"
 msgstr "内部服务器错误"
@@ -1305,7 +1307,6 @@ msgstr "无效的VLAN ID! 只允许唯一的ID。"
 msgid "Invalid username and/or password! Please try again."
 msgstr "无效的用户名和/或密码! 请重试。"
 
-#, fuzzy
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "
 "flash memory, please verify the image file!"
@@ -1393,7 +1394,7 @@ msgid "Limit"
 msgstr "客户数"
 
 msgid "Line Attenuation"
-msgstr ""
+msgstr "线路衰减"
 
 msgid "Line Speed"
 msgstr "线路速率"
@@ -1445,7 +1446,6 @@ msgstr "本地时间"
 msgid "Local domain"
 msgstr "本地域名"
 
-#, fuzzy
 msgid ""
 "Local domain specification. Names matching this domain are never forwarded "
 "and are resolved from DHCP or hosts files only"
@@ -1516,7 +1516,7 @@ msgid ""
 msgstr "请确认你已经复制过整个根文件系统,例如使用以下命令:"
 
 msgid "Manual"
-msgstr ""
+msgstr "手动"
 
 msgid "Maximum Rate"
 msgstr "最高速率"
@@ -1565,6 +1565,9 @@ msgstr "数据包镜像源端口"
 
 msgid "Missing protocol extension for proto %q"
 msgstr "缺少协议%q的协议扩展"
+
+msgid "mixed WPA/WPA2"
+msgstr "混合模式 WPA/WPA2"
 
 msgid "Mode"
 msgstr "模式"
@@ -1626,7 +1629,7 @@ msgid "NAS ID"
 msgstr "NAS ID"
 
 msgid "NAT64 Prefix"
-msgstr ""
+msgstr "NAT64 前缀"
 
 msgid "NDP-Proxy"
 msgstr "NDP-代理"
@@ -1669,6 +1672,9 @@ msgstr "下一步 »"
 
 msgid "No DHCP Server configured for this interface"
 msgstr "本接口未配置DHCP服务器"
+
+msgid "No Encryption"
+msgstr "不加密"
 
 msgid "No chains in this table"
 msgstr "本表中没有链"
@@ -1853,10 +1859,10 @@ msgid "PPtP"
 msgstr "PPtP"
 
 msgid "PSID offset"
-msgstr ""
+msgstr "PSID 偏移"
 
 msgid "PSID-bits length"
-msgstr ""
+msgstr "PSID 位长度"
 
 msgid "Package libiwinfo required!"
 msgstr "需要libiwinfo软件包！"
@@ -2037,7 +2043,6 @@ msgstr ""
 msgid "Really reset all changes?"
 msgstr "确定要放弃所有更改？"
 
-#, fuzzy
 msgid ""
 "Really shut down network?\\nYou might lose access to this device if you are "
 "connected via this interface."
@@ -2176,13 +2181,13 @@ msgid "Root directory for files served via TFTP"
 msgstr "TFTP服务器的根目录"
 
 msgid "Root preparation"
-msgstr ""
+msgstr "Root 准备"
 
 msgid "Routed IPv6 prefix for downstream interfaces"
-msgstr ""
+msgstr "下行接口 IPv6 路由前缀"
 
 msgid "Router Advertisement-Service"
-msgstr ""
+msgstr "路由器通告服务"
 
 msgid "Router Password"
 msgstr "主机密码"
@@ -2207,7 +2212,7 @@ msgstr "文件系统检查"
 msgid ""
 "SIXXS supports TIC only, for static tunnels using IP protocol 41 (RFC4213) "
 "use 6in4 instead"
-msgstr ""
+msgstr "SIXXS 仅支持 TIC， 对于使用 IP 协议 41 (RFC4213) 的静态隧道，请使用 6in4"
 
 msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
@@ -2279,7 +2284,6 @@ msgstr "服务类型"
 msgid "Services"
 msgstr "服务"
 
-#, fuzzy
 msgid "Set up Time Synchronization"
 msgstr "设置时间同步"
 
@@ -2305,7 +2309,7 @@ msgid "Size"
 msgstr "大小"
 
 msgid "Size (.ipk)"
-msgstr ""
+msgstr "大小 (.ipk)"
 
 msgid "Skip"
 msgstr "跳过"
@@ -2331,7 +2335,6 @@ msgstr "对不起，请求的目标未找到。"
 msgid "Sorry, the server encountered an unexpected error."
 msgstr "对不起，服务器遇到未知错误。"
 
-#, fuzzy
 msgid ""
 "Sorry, there is no sysupgrade support present; a new firmware image must be "
 "flashed manually. Please refer to the OpenWrt wiki for device specific "
@@ -2482,7 +2485,6 @@ msgstr "对象"
 msgid "Terminate"
 msgstr "关闭"
 
-#, fuzzy
 msgid ""
 "The <em>Device Configuration</em> section covers physical settings of the "
 "radio hardware such as channel, transmit power or antenna selection which "
@@ -2551,7 +2553,6 @@ msgstr "系统中的活跃连接。"
 msgid "The given network name is not unique"
 msgstr "给定的网络名重复"
 
-#, fuzzy
 msgid ""
 "The hardware is not multi-SSID capable and the existing configuration will "
 "be replaced if you proceed."
@@ -2560,10 +2561,10 @@ msgstr "本机的硬件不支持多SSID，继续进行将会覆盖现有配置�
 msgid ""
 "The length of the IPv4 prefix in bits, the remainder is used in the IPv6 "
 "addresses."
-msgstr "bit格式的IPv4前缀长度, 其余的用在IPv6地址."
+msgstr "位格式的IPv4前缀长度, 其余的用在IPv6地址."
 
 msgid "The length of the IPv6 prefix in bits"
-msgstr "bit格式的IPv6前缀长度"
+msgstr "位格式的IPv6前缀长度"
 
 msgid ""
 "The network ports on this device can be combined to several <abbr title="
@@ -2582,27 +2583,26 @@ msgid "The selected protocol needs a device assigned"
 msgstr "所选的协议需要分配设备"
 
 msgid "The submitted security token is invalid or already expired!"
-msgstr ""
+msgstr "提交的安全令牌无效或者已过期"
 
 msgid ""
 "The system is erasing the configuration partition now and will reboot itself "
 "when finished."
 msgstr "系统正在删除配置分区，完成后会自动重启。"
 
-#, fuzzy
 msgid ""
 "The system is flashing now.<br /> DO NOT POWER OFF THE DEVICE!<br /> Wait a "
 "few minutes before you try to reconnect. It might be necessary to renew the "
 "address of your computer to reach the device again, depending on your "
 "settings."
 msgstr ""
-"正在刷新系统...<br />切勿关闭电源! DO NOT POWER OFF THE DEVICE!<br />稍等数分"
+"正在刷新系统...<br />切勿关闭电源!<br />稍等数分"
 "钟即可重新连接到路由。可能需要更改计算机的IP地址以重新连接。"
 
 msgid ""
 "The tunnel end-point is behind NAT, defaults to disabled and only applies to "
 "AYIYA"
-msgstr ""
+msgstr "隧道终点位于NAT之后，默认为禁用状态并且仅应用于 AYIYA"
 
 msgid ""
 "The uploaded image file does not contain a supported format. Make sure that "
@@ -2639,6 +2639,9 @@ msgid ""
 "'server=1.2.3.4' fordomain-specific or full upstream <abbr title=\"Domain "
 "Name System\">DNS</abbr> servers."
 msgstr ""
+"文件中的每一行格式为 'server=/domain/1.2.3.4' 或 'server=1.2.3.4'，以指定"
+"特定域名的解析或全部使用上游 <abbr title=\"Domain Name System\">DNS</abbr>"
+"服务器"
 
 msgid ""
 "This is a list of shell glob patterns for matching files and directories to "
@@ -2675,7 +2678,7 @@ msgstr "登录账户时填写的用户名"
 
 msgid ""
 "This is the prefix routed to you by the tunnel broker for use by clients"
-msgstr ""
+msgstr "这三客户端通过 tnnel broker 获取的路由前缀"
 
 msgid "This is the system crontab in which scheduled tasks can be defined."
 msgstr "自定义系统crontab中的计划任务。"
@@ -2848,7 +2851,7 @@ msgid "Use broadcast flag"
 msgstr "使用广播标签"
 
 msgid "Use builtin IPv6-management"
-msgstr ""
+msgstr "使用内建的 IPv6 管理"
 
 msgid "Use custom DNS servers"
 msgstr "使用自定义的DNS服务器"
@@ -2911,10 +2914,10 @@ msgid "Vendor Class to send when requesting DHCP"
 msgstr "请求DHCP时发送的Vendor Class"
 
 msgid "Verbose"
-msgstr ""
+msgstr "详细"
 
 msgid "Verbose logging by aiccu daemon"
-msgstr ""
+msgstr "aiccu 后台进程详细日志"
 
 msgid "Verify"
 msgstr "验证"
@@ -2947,6 +2950,9 @@ msgstr ""
 "WPA加密需要安装wpa_supplicant(客户端模式)或安装hostapd(接入点AP、点对点ad-hoc"
 "模式)。"
 
+msgid "WPA-PSK/WPA2-PSK Mixed Mode"
+msgstr "WPA-PSK/WPA2-PSK 混合模式"
+
 msgid ""
 "Wait for NTP sync that many seconds, seting to 0 disables waiting (optional)"
 msgstr "在NTP同步之前等待时间.设置为0表示同步之前不等待(可选)"
@@ -2964,13 +2970,13 @@ msgid "Warning"
 msgstr "警告"
 
 msgid "Warning: There are unsaved changes that will get lost on reboot!"
-msgstr ""
+msgstr "警告: 有未保存的改动，重启将会丢失！"
 
 msgid "Whether to create an IPv6 default route over the tunnel"
-msgstr ""
+msgstr "如何创建通过隧道的 IPv6 默认路由"
 
 msgid "Whether to route only packets from delegated prefixes"
-msgstr ""
+msgstr "如何通过特定的前缀路由数据包"
 
 msgid "Width"
 msgstr "频宽"
@@ -3131,7 +3137,7 @@ msgid "none"
 msgstr "无"
 
 msgid "not present"
-msgstr ""
+msgstr "不存在"
 
 msgid "off"
 msgstr "关"
@@ -3161,13 +3167,13 @@ msgid "skiplink2 Skip to content"
 msgstr ""
 
 msgid "stateful-only"
-msgstr ""
+msgstr "仅有状态"
 
 msgid "stateless"
-msgstr ""
+msgstr "无状态"
 
 msgid "stateless + stateful"
-msgstr ""
+msgstr "无状态 + 有状态"
 
 msgid "tagged"
 msgstr "关联"

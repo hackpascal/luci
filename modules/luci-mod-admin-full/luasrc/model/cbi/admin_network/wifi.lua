@@ -686,7 +686,7 @@ function cipher.write(self, section)
 end
 
 
-encr:value("none", "No Encryption")
+encr:value("none", translate("No Encryption"))
 encr:value("wep-open",   translate("WEP Open System"), {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"}, {mode="adhoc"}, {mode="ahdemo"}, {mode="wds"})
 encr:value("wep-shared", translate("WEP Shared Key"),  {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"}, {mode="adhoc"}, {mode="ahdemo"}, {mode="wds"})
 
@@ -701,7 +701,7 @@ if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
 	if hostapd and supplicant then
 		encr:value("psk", "WPA-PSK", {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"})
 		encr:value("psk2", "WPA2-PSK", {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"})
-		encr:value("psk-mixed", "WPA-PSK/WPA2-PSK Mixed Mode", {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"})
+		encr:value("psk-mixed", translate("WPA-PSK/WPA2-PSK Mixed Mode"), {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"})
 		if has_ap_eap and has_sta_eap then
 			encr:value("wpa", "WPA-EAP", {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"})
 			encr:value("wpa2", "WPA2-EAP", {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"})
@@ -709,7 +709,7 @@ if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
 	elseif hostapd and not supplicant then
 		encr:value("psk", "WPA-PSK", {mode="ap"}, {mode="ap-wds"})
 		encr:value("psk2", "WPA2-PSK", {mode="ap"}, {mode="ap-wds"})
-		encr:value("psk-mixed", "WPA-PSK/WPA2-PSK Mixed Mode", {mode="ap"}, {mode="ap-wds"})
+		encr:value("psk-mixed", translate("WPA-PSK/WPA2-PSK Mixed Mode"), {mode="ap"}, {mode="ap-wds"})
 		if has_ap_eap then
 			encr:value("wpa", "WPA-EAP", {mode="ap"}, {mode="ap-wds"})
 			encr:value("wpa2", "WPA2-EAP", {mode="ap"}, {mode="ap-wds"})
@@ -721,7 +721,7 @@ if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
 	elseif not hostapd and supplicant then
 		encr:value("psk", "WPA-PSK", {mode="sta"}, {mode="sta-wds"})
 		encr:value("psk2", "WPA2-PSK", {mode="sta"}, {mode="sta-wds"})
-		encr:value("psk-mixed", "WPA-PSK/WPA2-PSK Mixed Mode", {mode="sta"}, {mode="sta-wds"})
+		encr:value("psk-mixed", translate("WPA-PSK/WPA2-PSK Mixed Mode"), {mode="sta"}, {mode="sta-wds"})
 		if has_sta_eap then
 			encr:value("wpa", "WPA-EAP", {mode="sta"}, {mode="sta-wds"})
 			encr:value("wpa2", "WPA2-EAP", {mode="sta"}, {mode="sta-wds"})
@@ -739,7 +739,7 @@ if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
 elseif hwtype == "broadcom" then
 	encr:value("psk", "WPA-PSK")
 	encr:value("psk2", "WPA2-PSK")
-	encr:value("psk+psk2", "WPA-PSK/WPA2-PSK Mixed Mode")
+	encr:value("psk+psk2", translate("WPA-PSK/WPA2-PSK Mixed Mode"))
 end
 
 auth_server = s:taboption("encryption", Value, "auth_server", translate("Radius-Authentication-Server"))
