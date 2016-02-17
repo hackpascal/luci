@@ -94,6 +94,10 @@ usbdev:depends("trigger", "usbdev")
 usbdev.rmempty = true
 usbdev:value("")
 
+port_mask = s:option(Value, "port_mask", translate("Switch Port Mask"))
+port_mask.rmempty = true
+port_mask:value("0x00")
+
 function usbdev.cfgvalue(self, section)
 	return m.uci:get("system", section, "dev")
 end
