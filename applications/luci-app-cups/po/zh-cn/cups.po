@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-20 22:30+0800\n"\
+"Last-Translator: hackpascal <hackpascal@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.6\n"
+
+msgid "CUPS Printer Sharing"
+msgstr "CUPS 打印机共享"
+
+msgid "CUPS - Printer Sharing"
+msgstr "CUPS - 打印机共享"
+
+msgid "CUPS is the printer system for UNIX-like systems."
+msgstr "CUPS 是类 UNIX 系统的打印机系统"
+
+msgid "Open CUPS management"
+msgstr "打开 CUPS 管理界面"
+
+msgid "Management"
+msgstr "管理"
