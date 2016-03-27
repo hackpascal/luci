@@ -699,6 +699,9 @@ msgstr ""
 msgid "Disable DNS setup"
 msgstr "停用DNS设定"
 
+msgid "Disable HT20/HT40 coexistence"
+msgstr "禁用 HT20/HT40 混合模式"
+
 msgid "Disable HW-Beacon timer"
 msgstr "停用 HW-Beacon 计时器"
 
@@ -1739,6 +1742,9 @@ msgstr "注意"
 msgid "Nslookup"
 msgstr "Nslookup"
 
+msgid "Number of Spatial Streams"
+msgstr "空间流数量"
+
 msgid "OK"
 msgstr "OK"
 
@@ -2771,6 +2777,9 @@ msgstr "传输功率"
 
 msgid "Type"
 msgstr "类型"
+
+msgid "UAPSD Enable"
+msgstr "启用 UAPSD"
 
 msgid "UDP:"
 msgstr "UDP:"

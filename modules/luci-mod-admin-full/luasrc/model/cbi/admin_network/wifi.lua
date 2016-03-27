@@ -236,6 +236,33 @@ if hwtype == "mac80211" then
 end
 
 
+------------------- qcawifi Device ------------------
+
+if hwtype == "qcawifi" then
+	if #tx_power_list > 1 then
+		tp = s:taboption("general", ListValue,
+			"txpower", translate("Transmit Power"), "dBm")
+		tp.rmempty = true
+		tp.default = tx_power_cur
+		function tp.cfgvalue(...)
+			return txpower_current(Value.cfgvalue(...), tx_power_list)
+		end
+
+		for _, p in ipairs(tx_power_list) do
+			tp:value(p.driver_dbm, "%i dBm (%i mW)"
+				%{ p.display_dbm, p.display_mw })
+		end
+	end
+
+	s:taboption("advanced", Value, "txantenna", translate("Tx Antenna bitmask"))
+	s:taboption("advanced", Value, "rxantenna", translate("Rx Antenna bitmask"))
+	s:taboption("advanced", Value, "regdomain", translate("Regulatory Domain"))
+	s:taboption("advanced", Value, "country", translate("Country Code"))
+
+end
+
+
+
 ------------------- Madwifi Device ------------------
 
 if hwtype == "atheros" then
@@ -477,6 +504,67 @@ end
 
 
 
+-------------------- qcawifi Interface ----------------------
+if hwtype == "qcawifi" then
+	mode:value("ap-wds", "%s (%s)" % {translate("Access Point"), translate("WDS")})
+	mode:value("sta-wds", "%s (%s)" % {translate("Client"), translate("WDS")})
+	mode:value("wds", translate("Static WDS"))
+
+	function mode.write(self, section, value)
+		if value == "ap-wds" then
+			ListValue.write(self, section, "ap")
+			m.uci:set("wireless", section, "wds", 1)
+		elseif value == "sta-wds" then
+			ListValue.write(self, section, "sta")
+			m.uci:set("wireless", section, "wds", 1)
+		else
+			ListValue.write(self, section, value)
+			m.uci:delete("wireless", section, "wds")
+		end
+	end
+
+	function mode.cfgvalue(self, section)
+		local mode = ListValue.cfgvalue(self, section)
+		local wds  = m.uci:get("wireless", section, "wds") == "1"
+
+		if mode == "ap" and wds then
+			return "ap-wds"
+		elseif mode == "sta" and wds then
+			return "sta-wds"
+		else
+			return mode
+		end
+	end
+
+	bssid:depends({mode="wds"})
+
+	s:taboption("advanced", Flag, "doth", "802.11h")
+	hidden = s:taboption("general", Flag, "hidden", translate("Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"))
+	hidden:depends({mode="ap"})
+	hidden:depends({mode="ap-wds"})
+	hidden:depends({mode="sta-wds"})
+	isolate = s:taboption("advanced", Flag, "isolate", translate("Separate Clients"),
+	 translate("Prevents client-to-client communication"))
+	isolate:depends({mode="ap"})
+	s:taboption("advanced", Flag, "disablecoext", translate("Disable HT20/HT40 coexistence"))
+	s:taboption("advanced", Flag, "uapsd", translate("UAPSD Enable"))
+	s:taboption("advanced", Value, "mcast_rate", translate("Multicast Rate"))
+	s:taboption("advanced", Value, "frag", translate("Fragmentation Threshold"))
+	s:taboption("advanced", Value, "rts", translate("RTS/CTS Threshold"))
+	s:taboption("advanced", Flag, "wmm", translate("WMM Mode"))
+
+        -------------------------------support 11ac------------------------------
+	if hw_modes.ac then
+		s:taboption("advanced", Value, "nss", translate("Number of Spatial Streams"))
+		s:taboption("advanced", Flag, "ldpc",translate("LDPC"))
+		s:taboption("advanced", Flag,"rx_stbc",translate("RX STBC"))
+		s:taboption("advanced", Flag,"tx_stbc",translate("TX STBC"))
+	end
+
+end
+
+
+
 -------------------- Madwifi Interface ----------------------
 
 if hwtype == "atheros" then
@@ -690,7 +778,7 @@ encr:value("none", translate("No Encryption"))
 encr:value("wep-open",   translate("WEP Open System"), {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"}, {mode="adhoc"}, {mode="ahdemo"}, {mode="wds"})
 encr:value("wep-shared", translate("WEP Shared Key"),  {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"}, {mode="adhoc"}, {mode="ahdemo"}, {mode="wds"})
 
-if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
+if hwtype == "atheros" or hwtype == "qcawifi" or hwtype == "mac80211" or hwtype == "prism2" then
 	local supplicant = fs.access("/usr/sbin/wpa_supplicant")
 	local hostapd = fs.access("/usr/sbin/hostapd")
 
@@ -851,7 +939,7 @@ for slot=1,4 do
 end
 
 
-if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
+if hwtype == "atheros" or hwtype == "qcawifi" or hwtype == "mac80211" or hwtype == "prism2" then
 	nasid = s:taboption("encryption", Value, "nasid", translate("NAS ID"))
 	nasid:depends({mode="ap", encryption="wpa"})
 	nasid:depends({mode="ap", encryption="wpa2"})
@@ -929,7 +1017,7 @@ if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
 	password:depends({mode="sta-wds", eap_type="ttls", encryption="wpa"})
 end
 
-if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
+if hwtype == "atheros" or hwtype == "qcawifi" or hwtype == "mac80211" or hwtype == "prism2" then
 	local wpasupplicant = fs.access("/usr/sbin/wpa_supplicant")
 	local hostcli = fs.access("/usr/sbin/hostapd_cli")
 	if hostcli and wpasupplicant then
