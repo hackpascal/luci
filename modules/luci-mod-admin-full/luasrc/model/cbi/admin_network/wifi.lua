@@ -781,10 +781,17 @@ encr:value("wep-shared", translate("WEP Shared Key"),  {mode="ap"}, {mode="sta"}
 if hwtype == "atheros" or hwtype == "qcawifi" or hwtype == "mac80211" or hwtype == "prism2" then
 	local supplicant = fs.access("/usr/sbin/wpa_supplicant")
 	local hostapd = fs.access("/usr/sbin/hostapd")
+	local wapid = fs.access("/usr/sbin/wapid")
 
 	-- Probe EAP support
 	local has_ap_eap  = (os.execute("hostapd -veap >/dev/null 2>/dev/null") == 0)
 	local has_sta_eap = (os.execute("wpa_supplicant -veap >/dev/null 2>/dev/null") == 0)
+ 
+	if wapid then
+		encr:value("wapi-psk","WAPI-PSK",  {mode="ap"})
+		encr:value("wapi-cert","WAPI-CERT",{mode="ap"})
+		encr:value("wapi-both","WAPI-BOTH",{mode="ap"})
+	end
 
 	if hostapd and supplicant then
 		encr:value("psk", "WPA-PSK", {mode="ap"}, {mode="sta"}, {mode="ap-wds"}, {mode="sta-wds"})
@@ -936,6 +943,121 @@ for slot=1,4 do
 		end
 		return Value.write(self, section, value)
 	end
+end
+
+
+--wapi web page
+wapikey = s:taboption("encryption", Value, "_wapi_key", translate("Key"))
+wapikey:depends("encryption", "wapi-psk")
+wapikey:depends("encryption", "wapi-both")
+wapikey.datatype = "wpakey"
+wapikey.rmempty = true
+wapikey.password = true
+
+wapikey.cfgvalue = function(self, section, value)
+	local key = m.uci:get("wireless", section, "key")
+	if key == "1" or key == "2" or key == "3" or key == "4" then
+		return nil
+	end
+	return key
+end
+
+wapikey.write = function(self, section, value)
+	self.map.uci:set("wireless", section, "key", value)
+	self.map.uci:delete("wireless", section, "key1")
+end
+
+
+c = s:taboption("encryption", Flag, "hex_key", translate("Use hexadecimal key"))
+c:depends("encryption","wapi-psk")
+c:depends("encryption","wapi-both")
+
+c = s:taboption("encryption", Flag, "pre_auth", translate("Pre authentication"))
+c:depends("encryption","wapi-psk")
+c:depends("encryption","wapi-both")
+
+c = s:taboption("encryption", Value, "unicast_rekey_timeout" ,translate("Unicast rekey timeout"))
+c.default=86400
+c:depends("encryption","wapi-psk")
+c:depends("encryption","wapi-cert")
+c:depends("encryption","wapi-both")
+
+c = s:taboption("encryption", Value, "unicast_rekey_packet" ,translate("Unicast rekey pakcet"))
+c.default=67108864
+c:depends("encryption","wapi-psk")
+c:depends("encryption","wapi-cert")
+c:depends("encryption","wapi-both")
+
+c = s:taboption("encryption", Value, "multicast_rekey_timeout" ,translate("Multicast rekey timeout"))
+c.default=86400
+c:depends("encryption","wapi-psk")
+c:depends("encryption","wapi-cert")
+c:depends("encryption","wapi-both")
+
+c = s:taboption("encryption", Value, "multicast_rekey_packet" ,translate("Multicast rekey packet"))
+c.default=67108864
+c:depends("encryption","wapi-psk")
+c:depends("encryption","wapi-cert")
+c:depends("encryption","wapi-both")
+
+c = s:taboption("encryption",Value, "asu_ip" ,translate("ASU IP address"))
+c:depends({encryption="wapi-cert"})
+c:depends({encryption="wapi-both"})
+
+c = s:taboption("encryption",Value, "asu_port" ,translate("ASU Port"))
+c:depends({encryption="wapi-cert"})
+c:depends({encryption="wapi-both"})
+
+c = s:taboption("encryption",ListValue, "cert_filetype" ,translate("Type of certificate"))
+c:value("509",translate("X.509"))
+c:value("GBW",translate("GBW"))
+c:depends({encryption="wapi-cert"})
+c:depends({encryption="wapi-both"})
+
+c = s:taboption("encryption" , TextValue,"_custom", translate("User certificate file"))
+c:depends({encryption="wapi-cert"})
+c:depends({encryption="wapi-both"})
+c.rempty =false
+c.cols=50
+c.rows= 5
+c.cfgvalue = function(self,section)
+	return nixio.fs.readfile("/etc/wapid/user.cer")
+end
+c.write = function(self,section,value)
+	value = value:gsub("\r\n?","\n")
+	return nixio.fs.writefile("/etc/wapid/user.cer",value)
+end
+
+c = s:taboption("encryption",TextValue,"_custom1", translate("CA certificate file"))
+c:depends({encryption="wapi-cert"})
+c:depends({encryption="wapi-both"})
+c.rempty =false
+c.cols=50
+c.rows= 5
+c.cfgvalue = function(self,section)
+	return nixio.fs.readfile("/etc/wapid/ca.cer")
+end
+c.write = function(self,section,value)
+	value = value:gsub("\r\n?","\n")
+	return nixio.fs.writefile("/etc/wapid/ca.cer",value)
+end
+
+c= s:taboption("encryption", Flag,"enable_tri_cert",translate("Enable 3 certificate file"))
+c:depends({encryption="wapi-cert"})
+c:depends({encryption="wapi-both"})
+
+c = s:taboption("encryption", TextValue,"_custom2", translate("ASU certificate file"))
+c.rempty =false
+c.cols=50
+c.rows= 5
+c:depends({enable_tri_cert="1"})
+
+c.cfgvalue = function(self,section)
+	return nixio.fs.readfile("/etc/wapid/asu.cer")
+end
+c.write = function(self,section,value)
+	value = value:gsub("\r\n?","\n")
+	return nixio.fs.writefile("/etc/wapid/asu.cer",value)
 end
 
 

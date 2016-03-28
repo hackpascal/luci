@@ -135,6 +135,15 @@ msgstr "AR 支持"
 msgid "ARP retry threshold"
 msgstr "ARP 重试阈值"
 
+msgid "ASU IP address"
+msgstr "ASU IP 地址"
+
+msgid "ASU Port"
+msgstr "ASU 端口"
+
+msgid "ASU certificate file"
+msgstr "ASU 证书文件"
+
 msgid "ATM Bridges"
 msgstr "ATM 桥接"
 
@@ -420,6 +429,9 @@ msgstr "此固件构建/发布时指定的源。此文件不会在任何系统�
 
 msgid "Buttons"
 msgstr "按键"
+
+msgid "CA certificate file"
+msgstr "CA 证书文件"
 
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr "CA证书.如果留空的话证书将在第一次连接时被保存."
@@ -811,6 +823,9 @@ msgstr "紧急"
 
 msgid "Enable"
 msgstr "启用"
+
+msgid "Enable 3 certificate file"
+msgstr "启用三证书文件"
 
 msgid "Enable <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgstr "开启<abbr title=\"Spanning Tree Protocol\">STP</abbr>"
@@ -1628,6 +1643,12 @@ msgstr "多播速率"
 msgid "Multicast address"
 msgstr "多播地址"
 
+msgid "Multicast rekey packet"
+msgstr "组播密钥更新包数量周期"
+
+msgid "Multicast rekey timeout"
+msgstr "组播密钥更新时间周期"
+
 msgid "NAS ID"
 msgstr "NAS ID"
 
@@ -1947,6 +1968,9 @@ msgstr "端口 %d 在多个VLAN中均未关联！"
 
 msgid "Port status:"
 msgstr "端口状态："
+
+msgid "Pre authentication"
+msgstr "预认证"
 
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
@@ -2778,6 +2802,9 @@ msgstr "传输功率"
 msgid "Type"
 msgstr "类型"
 
+msgid "Type of certificate"
+msgstr "证书类型"
+
 msgid "UAPSD Enable"
 msgstr "启用 UAPSD"
 
@@ -2813,6 +2840,12 @@ msgstr "未保存的配置"
 
 msgid "Unsupported protocol type."
 msgstr "不支持的协议类型"
+
+msgid "Unicast rekey pakcet"
+msgstr "单播密钥更新包数量周期"
+
+msgid "Unicast rekey timeout"
+msgstr "单播密钥更新时间周期"
 
 msgid "Update lists"
 msgstr "刷新列表"
@@ -2871,6 +2904,9 @@ msgstr "使用默认网关"
 msgid "Use gateway metric"
 msgstr "使用网关跃点"
 
+msgid "Use hexadecimal key"
+msgstr "使用十六进制密码"
+
 msgid "Use routing table"
 msgstr "使用路由表"
 
@@ -2891,6 +2927,9 @@ msgstr "启用密码组"
 
 msgid "User certificate (PEM encoded)"
 msgstr "客户证书(PEM加密的)"
+
+msgid "User certificate file"
+msgstr "客户证书文件"
 
 msgid "User key (PEM encoded)"
 msgstr "客户Key(PEM加密的)"
