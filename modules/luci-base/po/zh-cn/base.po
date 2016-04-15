@@ -2025,6 +2025,9 @@ msgstr "RTS/CTS阈值"
 msgid "RX"
 msgstr "接收"
 
+msgid "Rx Antenna bitmask"
+msgstr "接收天线位掩码"
+
 msgid "RX Rate"
 msgstr "接收速率"
 
@@ -2502,6 +2505,9 @@ msgstr "TFTP服务器根目录"
 
 msgid "TX"
 msgstr "发送"
+
+msgid "Tx Antenna bitmask"
+msgstr "发送天线位掩码"
 
 msgid "TX Rate"
 msgstr "发送速率"
