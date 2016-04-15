@@ -553,6 +553,19 @@ if hwtype == "qcawifi" then
 	s:taboption("advanced", Value, "rts", translate("RTS/CTS Threshold"))
 	s:taboption("advanced", Flag, "wmm", translate("WMM Mode"))
 
+	mp = s:taboption("macfilter", ListValue, "macfilter", translate("MAC-Address Filter"))
+	mp:depends({mode="ap"})
+	mp:depends({mode="ap-wds"})
+	mp:value("", translate("disable"))
+	mp:value("allow", translate("Allow listed only"))
+	mp:value("deny", translate("Allow all except listed"))
+
+	ml = s:taboption("macfilter", DynamicList, "maclist", translate("MAC-List"))
+	ml.datatype = "macaddr"
+	ml:depends({macfilter="allow"})
+	ml:depends({macfilter="deny"})
+	nt.mac_hints(function(mac, name) ml:value(mac, "%s (%s)" %{ mac, name }) end)
+
         -------------------------------support 11ac------------------------------
 	if hw_modes.ac then
 		s:taboption("advanced", Value, "nss", translate("Number of Spatial Streams"))
