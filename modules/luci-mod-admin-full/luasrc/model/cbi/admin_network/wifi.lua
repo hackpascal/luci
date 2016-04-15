@@ -519,6 +519,7 @@ if hwtype == "qcawifi" then
 	mode:value("ap-wds", "%s (%s)" % {translate("Access Point"), translate("WDS")})
 	mode:value("sta-wds", "%s (%s)" % {translate("Client"), translate("WDS")})
 	mode:value("wds", translate("Static WDS"))
+	mode:value("monitor", translate("Monitor"))
 
 	function mode.write(self, section, value)
 		if value == "ap-wds" then
