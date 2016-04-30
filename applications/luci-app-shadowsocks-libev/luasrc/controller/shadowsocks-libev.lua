@@ -8,5 +8,5 @@ function index()
 		return
 	end
 
-	entry({"admin", "services", "shadowsocks-libev"}, cbi("shadowsocks-libev"), _("ShadowSocks-libev"), 74).dependent = true
+	entry({"admin", "services", "shadowsocks-libev"}, cbi("shadowsocks-libev"), _("ShadowSocks"), 74).dependent = true
 end
