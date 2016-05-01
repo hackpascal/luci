@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-30 23:00+0800\n"\
+"Last-Translator: Weijie Gao <hackpascal@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.6\n"
+
+msgid "Activation Settings"
+msgstr "激活设置"
+
+msgid "Connection timeout"
+msgstr "连接超时"
+
+msgid "Default is 1w."
+msgstr "默认为 1w。"
+
+msgid "Disconnect client after each request"
+msgstr "每次客户端请求后均断开连接"
+
+msgid "Disconnect clients after <timeout> of inactivity."
+msgstr "在 <timeout> 时间内无活动则断开客户端连接。"
+
+msgid "Enable IPv4"
+msgstr "启用 IPv4"
+
+msgid "Enable IPv6"
+msgstr "启用 IPv6"
+
+msgid "Enable BTFN"
+msgstr "启用 BTFN"
+
+msgid "Enable NDR64"
+msgstr "启用 NDR64"
+
+msgid "Enable bind time feature negotiation in RPC."
+msgstr "在 RPC 中启用绑定时功能协商。"
+
+msgid "Enable log to file"
+msgstr "启用文件日志"
+
+msgid "Enable log to syslog"
+msgstr "启用系统日志"
+
+msgid "Enable the NDR64 transfer syntax in RPC."
+msgstr "在 RPC 中启用 NDR64 传输语法。"
+
+msgid "Fixed hardware Id"
+msgstr "固定硬件 ID"
+
+msgid "IPv4 Address"
+msgstr "IPv4 地址"
+
+msgid "IPv6 Address"
+msgstr "IPv6 地址"
+
+msgid "KMS Server"
+msgstr "KMS 服务器"
+
+msgid "Listen Port"
+msgstr "监听端口"
+
+msgid "Listening Settings"
+msgstr "监听设置"
+
+msgid "Log file"
+msgstr "日志文件"
+
+msgid "Verbose log"
+msgstr "详细日志"
+
+msgid "Logging Settings"
+msgstr "日志设置"
+
+msgid "Max client requests"
+msgstr "最大客户端请求数"
+
+msgid "Max. clients activating simultaneously. 0 for no limitation."
+msgstr "同时激活的最大客户端数量。0 表示无限制。"
+
+msgid "Renewal interval"
+msgstr "激活更新周期"
+
+msgid "Retry interval"
+msgstr "激活重试周期"
+
+msgid "The unit is minute. 's' (sec) / 'h' (hour) / 'd' (day) / 'w' (week) can be appended. Default is 2d."
+msgstr "单位是分钟。可在末尾加入 's' (秒) / 'h' (小时) / 'd' (天) / 'w' (星期)。默认为 2d。"
+
+msgid "Use fixed <LCID> in random ePIDs. 0 for defaults. Refer to https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx"
+msgstr "在随机化的 ePID 中使用固定的 LCID。0 表示使用默认值。参阅 https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx"
+
+msgid "ePID Settings"
+msgstr "ePID 设置"
+
+msgid "ePID for Office 2010"
+msgstr "Office 2010 的 ePID"
+
+msgid "ePID for Office 2013"
+msgstr "Office 2013 的 ePID"
+
+msgid "ePID for Windows"
+msgstr "Windows 产品的 ePID"
+
+msgid "ePID randomization level"
+msgstr "ePID 随机化级别"

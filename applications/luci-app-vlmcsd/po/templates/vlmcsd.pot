@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-30 23:00+0800\n"\
+"Last-Translator: Weijie Gao <hackpascal@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.6\n"
+
+msgid "Activation Settings"
+msgstr ""
+
+msgid "Connection timeout"
+msgstr ""
+
+msgid "Default is 1w."
+msgstr ""
+
+msgid "Disconnect client after each request"
+msgstr ""
+
+msgid "Disconnect clients after <timeout> of inactivity."
+msgstr ""
+
+msgid "Enable IPv4"
+msgstr ""
+
+msgid "Enable IPv6"
+msgstr ""
+
+msgid "Enable BTFN"
+msgstr ""
+
+msgid "Enable NDR64"
+msgstr ""
+
+msgid "Enable bind time feature negotiation in RPC."
+msgstr ""
+
+msgid "Enable log to file"
+msgstr ""
+
+msgid "Enable log to syslog"
+msgstr ""
+
+msgid "Enable the NDR64 transfer syntax in RPC."
+msgstr ""
+
+msgid "Fixed hardware Id"
+msgstr ""
+
+msgid "IPv4 Address"
+msgstr ""
+
+msgid "IPv6 Address"
+msgstr ""
+
+msgid "KMS Server"
+msgstr ""
+
+msgid "Listen Port"
+msgstr ""
+
+msgid "Listening Settings"
+msgstr ""
+
+msgid "Log file"
+msgstr ""
+
+msgid "Verbose log"
+msgstr ""
+
+msgid "Logging Settings"
+msgstr ""
+
+msgid "Max client requests"
+msgstr ""
+
+msgid "Max. clients activating simultaneously. 0 for no limitation."
+msgstr ""
+
+msgid "Renewal interval"
+msgstr ""
+
+msgid "Retry interval"
+msgstr ""
+
+msgid "The unit is minute. 's' (sec) / 'h' (hour) / 'd' (day) / 'w' (week) can be appended. Default is 2d."
+msgstr ""
+
+msgid "Use fixed <LCID> in random ePIDs. 0 for defaults. Refer to https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx"
+msgstr ""
+
+msgid "ePID Settings"
+msgstr ""
+
+msgid "ePID for Office 2010"
+msgstr ""
+
+msgid "ePID for Office 2013"
+msgstr ""
+
+msgid "ePID for Windows"
+msgstr ""
+
+msgid "ePID randomization level"
+msgstr ""
