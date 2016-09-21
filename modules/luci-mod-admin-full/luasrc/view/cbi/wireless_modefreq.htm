@@ -14,7 +14,7 @@
 	};
 
 	for (var i = 0; i < freqlist.length; i++)
-		channels[(freqlist[i].mhz > 2484) ? '11a' : '11g'].push(
+		channels[(freqlist[i].mhz > 2732) ? '11a' : '11g'].push(
 			freqlist[i].channel,
 			'%d (%d MHz)'.format(freqlist[i].channel, freqlist[i].mhz),
 			!freqlist[i].restricted

@@ -261,13 +261,13 @@ if hwtype == "qcawifi" then
 		for _, c in ipairs(cl) do
 			cc:value(c.alpha2, "%s - %s" %{ c.alpha2, c.name })
 		end
+		cc:value("DB", "SuperChannel")
 	else
 		s:taboption("advanced", Value, "country", translate("Country Code"), translate("Use ISO/IEC 3166 alpha2 country codes."))
 	end
 
 	s:taboption("advanced", Value, "txantenna", translate("Tx Antenna bitmask"))
 	s:taboption("advanced", Value, "rxantenna", translate("Rx Antenna bitmask"))
-	s:taboption("advanced", Value, "regdomain", translate("Regulatory Domain"))
 
 end
 
