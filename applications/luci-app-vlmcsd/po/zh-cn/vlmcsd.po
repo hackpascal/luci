@@ -105,8 +105,14 @@ msgstr "Office 2010 的 ePID"
 msgid "ePID for Office 2013"
 msgstr "Office 2013 的 ePID"
 
+msgid "ePID for Office 2016"
+msgstr "Office 2016 的 ePID"
+
 msgid "ePID for Windows"
 msgstr "Windows 产品的 ePID"
+
+msgid "ePID for Windows 10 China Gov"
+msgstr "Windows 10 中国政府版的 ePID"
 
 msgid "ePID randomization level"
 msgstr "ePID 随机化级别"

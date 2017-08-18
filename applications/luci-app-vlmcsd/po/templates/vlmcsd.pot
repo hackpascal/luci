@@ -105,7 +105,13 @@ msgstr ""
 msgid "ePID for Office 2013"
 msgstr ""
 
+msgid "ePID for Office 2016"
+msgstr ""
+
 msgid "ePID for Windows"
+msgstr ""
+
+msgid "ePID for Windows 10 China Gov"
 msgstr ""
 
 msgid "ePID randomization level"

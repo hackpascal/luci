@@ -77,10 +77,16 @@ o.default = "0"
 o = se:option(Value, "windows", translate("ePID for Windows"))
 o.rmempty = false
 
+o = se:option(Value, "win10cngov", translate("ePID for Windows 10 China Gov"))
+o.rmempty = false
+
 o = se:option(Value, "office2010", translate("ePID for Office 2010"))
 o.rmempty = false
 
 o = se:option(Value, "office2013", translate("ePID for Office 2013"))
+o.rmempty = false
+
+o = se:option(Value, "office2016", translate("ePID for Office 2016"))
 o.rmempty = false
 
 o = se:option(Value, "hwid", translate("Fixed hardware Id"))
